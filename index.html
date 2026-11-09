@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Link Manager — Pusat Inventarisasi Aplikasi &amp; Website</title>
+<meta name="description" content="Aplikasi web pribadi untuk menyimpan, mengelompokkan, dan mengelola seluruh alamat website maupun WebApp Anda.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230B2A6B%22/><text x=%2212%22 y=%2217%22 font-size=%2213%22 font-weight=%22800%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>DL</text></svg>">
+
+<!-- Preconnect untuk mempercepat panggilan pertama ke GAS (Prinsip 9) -->
+<link rel="preconnect" href="https://script.google.com">
+<link rel="preconnect" href="https://script.googleusercontent.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="css/style.css?v=1.0.0">
+
+<!-- Google Identity Services — sign-in dengan akun Google (sesuai PRD: tanpa password) -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<div id="login-root"></div>
+
+<div id="app-shell" style="display:none;">
+  <header class="topnav" id="topnav"></header>
+  <main class="page-wrap">
+    <div id="page-root"></div>
+  </main>
+  <footer class="footer-bar no-print">
+    <span>© 2025 Digital Link Manager. Hak cipta dilindungi undang-undang.</span>
+    <span>Sistem Inventarisasi Aset Web Korporat</span>
+  </footer>
+  <nav class="bottom-nav no-print" id="bottom-nav"></nav>
+</div>
+
+<div class="mobile-drawer" id="mobile-drawer"></div>
+<div class="toast-stack" id="toast-stack"></div>
+
+<script src="js/config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/pages/login.js"></script>
+<script src="js/pages/dashboard.js"></script>
+<script src="js/pages/inventaris.js"></script>
+<script src="js/pages/katalog.js"></script>
+<script src="js/pages/favorit.js"></script>
+<script src="js/pages/laporan.js"></script>
+<script src="js/pages/pengaturan.js"></script>
+<script src="js/pages/form-url.js"></script>
+<script src="js/pages/detail.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
